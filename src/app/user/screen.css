@@ -1,0 +1,19 @@
+
+@media (min-width:1301px) {
+
+
+    .all_content{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        /* background-color: rgb(171, 173, 173); */
+    }
+    
+    .side_nav{
+        position: fixed;
+        width: 20%;
+        height: 100%;
+        background-color: rgb(199, 199, 199);
+    }
+  
+}

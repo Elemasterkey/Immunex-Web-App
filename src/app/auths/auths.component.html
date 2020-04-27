@@ -1,0 +1,240 @@
+
+
+<div class="all">
+
+<div class="top_left_division">
+  <div class="fixeddiv">
+
+    <!-- <img src="../../assets/Surveillance_Data_animation.gif" alt=""> -->
+    <div class="trancediv">
+      
+    </div>
+
+  </div>
+</div>
+
+
+<div class="top_right_division">
+
+
+<div class="default_login_container">
+<div class="login_header">
+{{IMMUNEX_card}}
+</div>
+
+<!--login-->
+<div class="loginData" [hidden]="!login_show">
+
+<div class="login_msg">{{login_message}}</div>
+<div class="login_form">
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+  <mat-form-field class="id_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Email / Immunex ID
+    </mat-label>
+    <input type="email" autofocus matInput placeholder=""  formControlName="email">
+  </mat-form-field>
+
+    <mat-form-field class="pass_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Password
+    </mat-label>
+    <input type="password" matInput placeholder=""  formControlName="password">
+  </mat-form-field>
+
+  <button [class.dissabled_but]="(loginForm.status == 'INVALID')" [disabled]="(loginForm.status == 'INVALID')" type="submit" class="login_button" >Log In</button>
+
+</form>
+</div>
+<div class="create_acc">
+Fogot password? <span (click)="reset_password()" class="create_link">Reset.</span>
+</div>
+
+<div class="create_acc">
+Don't have an account? <span (click)="c_user_acc()" class="create_link">Create.</span>
+</div>
+</div>
+<!--/login-->
+
+
+
+
+
+<!--create  acc-->
+
+<div class="create_data" [hidden]="!create_show">
+  <div class="c_header">
+    <div (click)="c_user_acc()" [class.c_sel]="create_show" class="u_c"> User Account</div>
+    <div (click)="c_fac_acc()" [class.c_sel]="f_create_show" class="f_c"> Facility Account</div>
+  </div>
+<div class="login_msg">{{create_message}}</div>
+<div class="login_form">
+
+  <form [formGroup]="create_accForm" (ngSubmit)="create()">
+
+  <mat-form-field class="id_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Full Name
+    </mat-label>
+    <input type="text" autofocus matInput placeholder=""  formControlName="full_name">
+  </mat-form-field>
+
+  <mat-form-field class="id_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Email
+    </mat-label>
+    <input type="email" autofocus matInput placeholder=""  formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field class="id_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Phone (Optional)
+    </mat-label>
+    <input type="tel" autofocus matInput placeholder=""  formControlName="phone">
+  </mat-form-field>
+
+  <mat-form-field class="id_field" >
+    <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Date of Birth
+      </mat-label>
+    <input matInput type="date" [matDatepicker]="myDatepicker" placeholder="mmddyyyyy"  formControlName="dob">
+    <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+    <mat-datepicker #myDatepicker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="id_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Country
+    </mat-label>
+    <input autofocus matInput placeholder=""  formControlName="contry">
+  </mat-form-field>
+
+  <mat-form-field class="pass_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Password
+    </mat-label>
+    <input type="password" matInput placeholder=""  formControlName="password">
+  </mat-form-field>
+
+  <mat-form-field class="pass_field" >
+    <mat-label >
+    <!--  <mat-icon ></mat-icon>  -->
+    Confirm Password
+    </mat-label>
+    <input type="password" matInput placeholder=""  formControlName="con_password">
+  </mat-form-field>
+
+  <button type="submit" class="login_button" >Create</button>
+
+</form>
+</div>
+
+<div class="create_acc">
+Already have an account? <span (click)="log()" class="create_link">Log In.</span>
+</div>
+</div>
+
+<!--/create  acc-->
+
+
+
+
+
+
+
+
+<!--create institutional acc-->
+<div class="loginData" [hidden]="!f_create_show">
+  <div class="c_header">
+  <div (click)="c_user_acc()" [class.c_sel]="create_show" class="u_c"> User Account</div>
+  <div (click)="c_fac_acc()" [class.c_sel]="f_create_show" class="f_c"> Facility Account</div>
+  </div>
+
+  <div class="login_msg">{{i_create_message}}</div>
+  <div class="login_form">
+  
+    <form [formGroup]="i_createForm" (ngSubmit)="fac_create()">
+
+    <mat-form-field class="id_field" >
+      <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Facility Name
+      </mat-label>
+      <input type="text" autofocus matInput placeholder=""  formControlName="f_name">
+    </mat-form-field>
+  
+    <mat-form-field class="id_field" >
+      <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Facility Email
+      </mat-label>
+      <input type="email" autofocus matInput placeholder=""  formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field class="id_field" >
+      <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Facility ID (optional)
+      </mat-label>
+      <input type="text" autofocus matInput placeholder=""  formControlName="f_id">
+    </mat-form-field>
+  
+    <mat-form-field class="id_field" >
+      <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Facility Telephone
+      </mat-label>
+      <input type="tel" autofocus matInput placeholder=""  formControlName="phone">
+    </mat-form-field>
+
+    <mat-form-field class="id_field" >
+      <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Country
+      </mat-label>
+      <input autofocus matInput placeholder=""  formControlName="contry">
+    </mat-form-field>
+
+    <mat-form-field class="pass_field" >
+      <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Password
+      </mat-label>
+      <input type="password" matInput placeholder=""  formControlName="password">
+    </mat-form-field>
+  
+    <mat-form-field class="pass_field" >
+      <mat-label >
+      <!--  <mat-icon ></mat-icon>  -->
+      Confirm Password
+      </mat-label>
+      <input type="password" matInput placeholder=""  formControlName="con_password">
+    </mat-form-field>
+  
+    <button type="submit" class="login_button" >Create</button>
+  
+  </form>
+  </div>
+
+  <div class="create_acc">
+    Already have an account? <span (click)="log()" class="create_link">Log In.</span>
+  </div>
+  </div>
+  <!--/create institutional acc-->
+
+
+
+</div>
+</div>
+
+</div>

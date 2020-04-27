@@ -1,0 +1,174 @@
+
+@media (min-width:1301px) {
+
+  
+  /* .all{
+    background-image: url(./../../assets/sliding.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+  } */
+
+
+
+  .fixeddiv{
+    /* position: fixed; */
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(./../../assets/sliding.png); */
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .trancediv{
+    background-image: url(./../../assets/covid19hack.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 7vh auto;
+    width: 100%;
+    height: 82vh;
+    /* background-color: rgba(122, 178, 190, 0.267);
+    border-left: 3px solid rgb(27, 148, 122);
+    border-right: 3px solid rgb(27, 148, 122); */
+  }
+
+  .top_right_division{
+    float: right;
+    height: inherit;
+    width:50%;
+    margin:0px;
+    /* background-color: rgba(183, 244, 252, 0.384); */
+  }
+  .top_left_division{
+    float: left;
+    height:100;
+    width:50%;
+    margin:0px;
+    /* position: fixed; */
+    /* background-color: rgba(183, 244, 252, 0.384); */
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+
+  .default_login_container{
+    float: right;
+    margin-right: 9%;
+    width: 330px;
+    min-height: 430px;
+    max-height: 100%;
+    margin-top: 7vh;
+    /* border-top: 2px solid rgb(56, 160, 163); */
+    border-bottom: 2px solid rgb(56, 160, 163);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: rgba(232, 255, 247, 0.679);
+    box-shadow: 0 1px 3px 0 rgba(134, 134, 134, 0.342), 0 4px 8px 3px rgba(95, 95, 95, 0.377), 0 6px 9px 3px rgba(95, 95, 95, 0.377);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .login_header{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(102, 250, 255, 0.595);
+    font-size: 1.7em;
+    padding-left: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .dissabled_but{
+    cursor: not-allowed;
+  }
+  .c_header{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(102, 250, 255, 0.144);
+    padding-left: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-top: 1px solid rgb(26, 60, 88);
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  .u_c{
+    width: 50%;
+    border: 0px;
+    margin: 0px;
+    float: left;
+    height: 30px;
+  }
+  .u_c:hover{
+    background-color: rgba(102, 250, 255, 0.247);
+  }
+  .f_c{
+    width: 50%;
+    border: 0px;
+    margin: 0px;
+    float: left;
+    height: 30px;
+  }
+  .f_c:hover{
+    background-color: rgba(102, 250, 255, 0.247);
+  }
+  .c_sel{
+    border-bottom: 3px solid rgb(26, 60, 88);
+  }
+
+  .login_form{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .id_field{
+    width: 80%;
+    margin: 10px auto;
+    margin-left: 10%;
+  }
+
+  .pass_field{
+    width: 80%;
+    margin: 10px auto;
+    margin-left: 10%;
+  }
+
+  .login_button{
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    border: 0px;
+    background-color: rgb(159, 225, 245);
+    font-size: 1.5em;
+    margin-left: 10%;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-bottom:1px solid rgb(105, 105, 105);
+  }
+  .login_button:hover{
+    border: 2px solid rgb(56, 160, 163);
+  }
+  .create_acc{
+    width: 85%;
+    margin: 20px auto;
+    /* border-top:1px solid rgb(105, 105, 105); */
+    text-align: center;
+    /* padding-top:20px; */
+  }
+
+  .create_link{
+    color: rgb(26, 26, 100);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .login_msg{
+    /* padding-top:"5px"; */
+    text-align: center;
+    overflow: hidden;
+  }
+
+
+}

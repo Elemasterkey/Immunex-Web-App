@@ -1,0 +1,39 @@
+
+@media (max-width:900px) {
+
+
+  .default_login_container{
+    float: none;
+    margin-right: 0%;
+    width: 100%;
+    min-height: 430px;
+    max-height: 100%;
+    margin: 0px auto;
+    /* border-top: 2px solid rgb(56, 160, 163); */
+    /* border-bottom: 2px solid rgb(56, 160, 163); */
+    border-radius: 0px;
+    background-color: inherit;
+    box-shadow: unset;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+
+  .login_header{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(102, 250, 255, 0.595);
+    font-size: 1.7em;
+    padding-left: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .login_msg{
+    text-align: center;
+    overflow: hidden;
+  }
+
+
+
+}
